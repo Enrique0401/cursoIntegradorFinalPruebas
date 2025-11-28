@@ -434,6 +434,10 @@ public class TablaSeguimientos extends javax.swing.JPanel implements Observador 
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTable tablaUsuario;
     // End of variables declaration//GEN-END:variables
+// Método auxiliar para Test Unitario
+    public int getCantidadProyectosCombo() {
+        return jComboBox1.getItemCount();
+    }
 }
 
 // --- CLASE AUXILIAR PARA EL COMBOBOX DE PROYECTOS ---

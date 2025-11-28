@@ -452,6 +452,10 @@ public class TablaProyectos extends javax.swing.JPanel implements Observador {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tablaUsuario;
     // End of variables declaration//GEN-END:variables
+// Método auxiliar para Test Unitario
+    public int getCantidadClientesCombo() {
+        return comboClientes.getItemCount();
+    }
 }
 
 // Clase auxiliar para guardar ID y Nombre en el ComboBox
