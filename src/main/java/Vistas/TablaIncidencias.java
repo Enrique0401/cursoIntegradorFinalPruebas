@@ -49,17 +49,6 @@ public class TablaIncidencias extends javax.swing.JPanel implements Observador {
         }
     }
 
-//    private void cargarProyectosEnCombo() {
-//        comboBoxProyectos.removeAllItems();
-//
-//        List<Proyectos> lista = proyectoService.obtenerTodos();
-//
-//        comboBoxProyectos.addItem("--Todos los proyectos--"); // opción para mostrar todo
-//
-//        for (Proyectos p : lista) {
-//            comboBoxProyectos.addItem(p.getNombre());
-//        }
-//    }
 
     public class ItemCombo {
 
@@ -299,4 +288,8 @@ public class TablaIncidencias extends javax.swing.JPanel implements Observador {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tablaUsuario;
     // End of variables declaration//GEN-END:variables
+// Método auxiliar para Test Unitario
+    public int getCantidadItemsCombo() {
+        return comboBoxProyectos.getItemCount();
+    }
 }
