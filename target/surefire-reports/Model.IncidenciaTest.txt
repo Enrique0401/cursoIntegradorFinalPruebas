@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: Model.IncidenciaTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.102 s <<< FAILURE! -- in Model.IncidenciaTest
+Model.IncidenciaTest.testMostrarInfo -- Time elapsed: 0.008 s <<< ERROR!
+java.util.MissingFormatArgumentException: Format specifier '%s'
+	at java.base/java.util.Formatter.format(Formatter.java:2760)
+	at java.base/java.util.Formatter.format(Formatter.java:2698)
+	at java.base/java.lang.String.format(String.java:4468)
+	at Model.Incidencia.mostrarInfo(Incidencia.java:69)
+	at Model.IncidenciaTest.testMostrarInfo(IncidenciaTest.java:73)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+

@@ -1,0 +1,56 @@
+-------------------------------------------------------------------------------
+Test set: Servicio.ClienteServiceTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 3, Errors: 2, Skipped: 0, Time elapsed: 9.795 s <<< FAILURE! -- in Servicio.ClienteServiceTest
+Servicio.ClienteServiceTest.testRegistrarExitoso -- Time elapsed: 4.284 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: El registro debería ser exitoso ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at Servicio.ClienteServiceTest.testRegistrarExitoso(ClienteServiceTest.java:57)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+Servicio.ClienteServiceTest.testActualizar -- Time elapsed: 0.955 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not <null>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertNotNull.failNull(AssertNotNull.java:49)
+	at org.junit.jupiter.api.AssertNotNull.assertNotNull(AssertNotNull.java:35)
+	at org.junit.jupiter.api.AssertNotNull.assertNotNull(AssertNotNull.java:30)
+	at org.junit.jupiter.api.Assertions.assertNotNull(Assertions.java:304)
+	at Servicio.ClienteServiceTest.testActualizar(ClienteServiceTest.java:89)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+Servicio.ClienteServiceTest.testObtenerTodos -- Time elapsed: 0.966 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
+	at Servicio.ClienteServiceTest.testObtenerTodos(ClienteServiceTest.java:112)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+Servicio.ClienteServiceTest.testEliminarConConfirmacion -- Time elapsed: 0.641 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "Model.Cliente.getIdCliente()" because "guardado" is null
+	at Servicio.ClienteServiceTest.testEliminarConConfirmacion(ClienteServiceTest.java:135)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+Servicio.ClienteServiceTest.testEliminarSimple -- Time elapsed: 0.614 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "Model.Cliente.getIdCliente()" because "guardado" is null
+	at Servicio.ClienteServiceTest.testEliminarSimple(ClienteServiceTest.java:122)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+

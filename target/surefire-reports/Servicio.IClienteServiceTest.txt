@@ -1,0 +1,59 @@
+-------------------------------------------------------------------------------
+Test set: Servicio.IClienteServiceTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.509 s <<< FAILURE! -- in Servicio.IClienteServiceTest
+Servicio.IClienteServiceTest.testActualizar -- Time elapsed: 0.408 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "conn" is null
+	at Repositorio.ClienteRepositorio.verificarExistencia(ClienteRepositorio.java:163)
+	at Repositorio.ClienteRepositorio.emailRegistrado(ClienteRepositorio.java:154)
+	at Servicio.ClienteService.validarAntesDeRegistrar(ClienteService.java:79)
+	at Servicio.ClienteService.registrar(ClienteService.java:58)
+	at Servicio.IClienteServiceTest.testActualizar(IClienteServiceTest.java:101)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+Servicio.IClienteServiceTest.testObtenerTodos -- Time elapsed: 0.011 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "conn" is null
+	at Repositorio.ClienteRepositorio.verificarExistencia(ClienteRepositorio.java:163)
+	at Repositorio.ClienteRepositorio.emailRegistrado(ClienteRepositorio.java:154)
+	at Servicio.ClienteService.validarAntesDeRegistrar(ClienteService.java:79)
+	at Servicio.ClienteService.registrar(ClienteService.java:58)
+	at Servicio.IClienteServiceTest.testObtenerTodos(IClienteServiceTest.java:75)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+Servicio.IClienteServiceTest.testBuscarPorId -- Time elapsed: 0.013 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "conn" is null
+	at Repositorio.ClienteRepositorio.verificarExistencia(ClienteRepositorio.java:163)
+	at Repositorio.ClienteRepositorio.emailRegistrado(ClienteRepositorio.java:154)
+	at Servicio.ClienteService.validarAntesDeRegistrar(ClienteService.java:79)
+	at Servicio.ClienteService.registrar(ClienteService.java:58)
+	at Servicio.IClienteServiceTest.testBuscarPorId(IClienteServiceTest.java:87)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+Servicio.IClienteServiceTest.testRegistrar -- Time elapsed: 0.009 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "conn" is null
+	at Repositorio.ClienteRepositorio.verificarExistencia(ClienteRepositorio.java:163)
+	at Repositorio.ClienteRepositorio.emailRegistrado(ClienteRepositorio.java:154)
+	at Servicio.ClienteService.validarAntesDeRegistrar(ClienteService.java:79)
+	at Servicio.ClienteService.registrar(ClienteService.java:58)
+	at Servicio.IClienteServiceTest.testRegistrar(IClienteServiceTest.java:65)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+Servicio.IClienteServiceTest.testEliminar -- Time elapsed: 0.010 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "conn" is null
+	at Repositorio.ClienteRepositorio.verificarExistencia(ClienteRepositorio.java:163)
+	at Repositorio.ClienteRepositorio.emailRegistrado(ClienteRepositorio.java:154)
+	at Servicio.ClienteService.validarAntesDeRegistrar(ClienteService.java:79)
+	at Servicio.ClienteService.registrar(ClienteService.java:58)
+	at Servicio.IClienteServiceTest.testEliminar(IClienteServiceTest.java:121)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
